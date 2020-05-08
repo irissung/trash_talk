@@ -1,0 +1,50 @@
+<div class="container">
+  <form method="POST" action="/">
+    <div class="row card-header">
+      <h1 class="title">看看最想對誰說幹話</h1>
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            alt="developer">
+          <div class="card-body">
+            <div class="custom-control custom-radio mb-3">
+              <input class="custom-control-input" type="radio" name="target" id="developer" value="developer">
+              <label class=" custom-control-label" for="developer">工程師</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="designer">
+          <div class="card-body">
+            <div class="custom-control custom-radio mb-3">
+              <input class="custom-control-input" type="radio" name="target" id="designer" value="designer">
+              <label class="custom-control-label" for="designer">設計師</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top"
+            src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="founder">
+          <div class="card-body">
+            <div class="custom-control custom-radio mb-3">
+              <input class="custom-control-input" type="radio" name="target" id="founder" value="founder">
+              <label class="custom-control-label" for="founder">創業家</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="submit" id="trash-generate">產生幹話</button>
+        </div>
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1"
+          value="{{trashTalk}}">
+      </div>
+    </div>
+  </form>
+</div>
